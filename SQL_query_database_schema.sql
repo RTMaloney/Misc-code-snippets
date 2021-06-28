@@ -11,7 +11,7 @@
        DATETIME_PRECISION,       -- Precision (sampling) of date/time data (ms field). The clock can update every 3 ms or every 0.003333 sec. So the clock samples at 333.333 Hz.
        CHARACTER_SET_NAME        -- unique name for the character set if this column is character data or text data type.
 FROM   INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_NAME NOT LIKE '%V_D%' -- Filter our VIEW objects which begin with 'V_DB'; we want only BASE TABLES 
+WHERE TABLE_NAME NOT LIKE '%V_D%' -- Filter out VIEW objects which begin with 'V_DB'; we want only BASE TABLES 
 --WHERE DATA_TYPE != 'nvarchar'
 
   -- For info on the meaning of information see 
