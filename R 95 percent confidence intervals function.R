@@ -6,3 +6,7 @@
 # See also https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/binom.test
 
 my_binom <- function(x, n) {binom.test(x,n)$conf.int[1:2]}
+
+# NOTE: as written, this function can only accept scalar values of x or n.
+# To run across x and n as vectors, use an 'apply' function, something like:
+mapply(my_binom, x = as.vector(x), n = as.vector(x) )
