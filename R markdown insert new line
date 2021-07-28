@@ -1,0 +1,11 @@
+# Add a mew line WITHIN a knitr chunck (or within a loop), to separate successive outputs (eg figures). 
+# If this is done outside a loop, it introduces a page break.
+# NOTE: you must include the option results='asis' in the chunk options in order for the cat function (esp in Word doc format) to read the symbols the way you want them to be interpreted within the document.
+
+```{r insert new lines, results='asis'}
+
+cat("\n")
+cat("#####\n") # inserts a blank small heading
+cat("\n")
+
+```
