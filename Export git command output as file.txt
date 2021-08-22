@@ -1,0 +1,7 @@
+
+# To save the full git log history to a file called "commits.txt":
+
+git log --full-history > commits.txt
+
+# or to copy to the clipboard, use the pipe symbol:
+git log --full-history | clip
