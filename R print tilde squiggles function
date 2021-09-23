@@ -1,0 +1,5 @@
+# ~~~~~~~~~~~ Print standard squiggle for section borders ~~~~~~~~~~~
+# To help break up code and highlight subsections
+print_tildes <- function() {
+  cat("~~~~~~~~~~~")
+}
