@@ -68,7 +68,7 @@ df1 <- data.frame(
 # NOTE: this will not affect the ID column (col 1)
 for (ii in names(df1[-1]) ) {
   
-  df1[ sample(1:total_n, round(total_n * 0.1), replace = TRUE), ii] <- NA
+  df1[ sample(1:total_n, round(total_n * propn_null), replace = TRUE), ii] <- NA
   
 }
 
