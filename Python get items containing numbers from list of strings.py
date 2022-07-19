@@ -3,3 +3,5 @@
 [x for x in my_list_of_strings if x[0].isdigit()]
 
 # NOTE: this is just checking the first value in the string: [0], so this might be different depending on where you expect the digit/number to be within the string.
+
+# see here for ideas: https://www.geeksforgeeks.org/python-check-if-string-contains-any-number/
